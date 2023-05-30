@@ -45,12 +45,12 @@ public class Ejercicio1 {
         
         //ejercicio3
         
-        int num1 = 10;
-        int num2 = 20;
-        int suma = num1 + num2;
-        int resta = num2 - num1;
-        int contador = num1++;
-        boolean mayorQue =  num2 > num1;
+//        int num1 = 10;
+//        int num2 = 20;
+//        int suma = num1 + num2;
+//        int resta = num2 - num1;
+//        int contador = num1++;
+//        boolean mayorQue =  num2 > num1;
         
         //ejercicio4
 //        String nombre = "Rebeca";
@@ -148,38 +148,68 @@ public class Ejercicio1 {
 
 
             //ejercicio11
-        int longitud;
-        char letter;
-        String newFrase = "";
-        System.out.println("Ingrese una frase");
-        String frase = leer.nextLine();
-        longitud = frase.length();
-        for (int i = 0; i < longitud; i++) {
-            
-            switch(frase.charAt(i)){
-                case 'a':
-                    letter = '@';
-                    
-                    break;
-                case 'e':
-                    letter = '#';
-                    break;
-                case 'i':
-                    letter = '$';
-                    break;
-                case 'o':
-                    letter = '%';
-                    break;
-                case 'u':
-                    letter = '*';
-                    break;
-                default:
-                    letter = frase.charAt(i);
-            }
-            newFrase = newFrase.concat(String.valueOf(letter));
-        }
-        System.out.println(newFrase);
+//        int longitud;
+//        char letter;
+//        String newFrase = "";
+//        System.out.println("Ingrese una frase");
+//        String frase = leer.nextLine();
+//        longitud = frase.length();
+//        for (int i = 0; i < longitud; i++) {
+//            
+//            switch(frase.charAt(i)){
+//                case 'a':
+//                    letter = '@';
+//                    
+//                    break;
+//                case 'e':
+//                    letter = '#';
+//                    break;
+//                case 'i':
+//                    letter = '$';
+//                    break;
+//                case 'o':
+//                    letter = '%';
+//                    break;
+//                case 'u':
+//                    letter = '*';
+//                    break;
+//                default:
+//                    letter = frase.charAt(i);
+//            }
+//            newFrase = newFrase.concat(String.valueOf(letter));
+//        }
+//        System.out.println(newFrase);
         
-     
+
+        //ejercicio12
+//        int num1, num2;
+//        System.out.println("Ingrese 2 numeros para saber si son multiplos");
+//        num1 = leer.nextInt();
+//        num2 = leer.nextInt();
+//        esMultiplo(num1, num2);
+
+
+        //ejercicio13 y 14
+        String[] vector = new String [5];
+        for (int i = 0; i < vector.length; i++) {
+            System.out.println("Ingrese un nombre:");
+            vector[i] = leer.nextLine();
+        }
+        
+        for (String element : vector) {
+            System.out.println(element);
+        }
     }
+    
+    public static void esMultiplo(int num1, int num2){
+        if (num1%num2 == 0){
+            System.out.println("Es multiplo");
+        } else {
+            System.out.println("No es multiplo");
+        }
+    }
+    
+    
 }
+
+
